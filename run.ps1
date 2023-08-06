@@ -1,1 +1,1 @@
-mdbook serve --open
+mdbook watch --open
