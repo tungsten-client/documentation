@@ -1,0 +1,16 @@
+name: Check
+
+on: [push]
+
+jobs:
+    check:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+            - name: Install MDBook
+              run: cargo install mdbook
+            - name: Build book
+              run: mdbook build
+            - name: Test code samples
+              run: mdbook test # dont think this is actually compatible with java, just here in case
