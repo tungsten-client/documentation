@@ -1,0 +1,32 @@
+name: Deploy to Github Pages
+
+on:
+    release:
+        types: [published]
+    workflow_dispatch:
+
+concurrency: production
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.url }}
+
+        permissions:
+            pages: write
+            id-token: write
+
+        steps:
+            - uses: actions/checkout@v3
+            - name: Install MDBook
+              run: cargo install mdbook
+            - name: Build book
+              run: mdbook build
+            - uses: actions/upload-pages-artifact@v2
+              with:
+                path: book
+            - name: Deploy to GithHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v2
