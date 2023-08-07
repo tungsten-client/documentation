@@ -15,7 +15,7 @@ import org.tungsten.client.feature.module.config.TextboxSetting;
 
 public class ExampleModule extends GenericModule {
 
-    // new CheckboxSetting(checked, title, description)
+    // new CheckboxSetting(default, title, description)
     CheckboxSetting checkboxSetting = new CheckboxSetting(true,"CheckboxSetting","Example checkbox.");
 
     // new SliderSetting(default, min, max, title, description)
