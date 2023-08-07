@@ -4,6 +4,7 @@ The Modules API allows you to define many types of custom setttings, including t
 - [SliderSetting](slider.md) - A slider that works in a limited range
 - [TextboxSetting](textbox.md) - A text box that allows for string input
 - [ButtonSetting](button.md) - A button that runs a handle on click
+- [GenericSetting (defining custom setting types)](generic.md) - The class that all settings extend and use in the ClickGUI
 
 ### Registering settings
 A function on [GenericModule](../introduction.md) is `this.registerSettings`, which is very important to include when working with custom settings.
