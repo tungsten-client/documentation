@@ -9,7 +9,7 @@ The GenericModule superclass's initialization function has 3 params:
 - description - The description of the module
 - category - The category the module appears in (creates a new one if there is no category with that name)
 
-You also likely want to use the `this.registerSettings` function provided if you are using [Custom Settings](customSettings.md)
+You also likely want to use the `this.registerSettings` function provided if you are using [Custom Settings](settings/introduction.md)
 ```java
 ~package org.tungsten.client.feature.module.modules;
 ~
