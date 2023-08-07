@@ -5,4 +5,5 @@
 # Module Development
 - [Modules API](modulesAPI/introduction.md)
   - [Quickstart](modulesAPI/quickstart.md)
+  - [GenericModule](modulesAPI/genericModule.md)
   - [Publishing]()

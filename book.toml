@@ -5,3 +5,6 @@ multilingual = false
 src = "src"
 title = "Tungsten Client Documentation"
 description = "Documentation for Tungsten Client."
+
+[output.html.code.hidelines]
+java = "~"
