@@ -1,3 +1,3 @@
 # Introduction
 
-The Tungsten Client Modules API allows module developers to easily create custom client modules.
+Tungsten Client is a Minecraft client that allows users to install modules 
