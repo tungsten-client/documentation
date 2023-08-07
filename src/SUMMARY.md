@@ -1,3 +1,3 @@
 # Summary
 
-- [Quickstart](quickstart.md)
+[Quickstart](quickstart.md)
