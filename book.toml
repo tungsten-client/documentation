@@ -3,4 +3,4 @@ authors = ["HyperCodec"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Tungsten Documentation"
+title = "Tungsten Client Documentation"
