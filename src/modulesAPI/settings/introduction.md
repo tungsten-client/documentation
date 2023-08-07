@@ -7,6 +7,7 @@ The Modules API allows you to define many types of custom setttings, including t
 
 ### Registering settings
 A function on [GenericModule](../introduction.md) is `this.registerSettings`, which is very important to include when working with custom settings.
+This function accepts all defined setting fields of the class, meaning you only have to define them and run the function for them to be registered.
 ```java
 ~package org.tungsten.client.feature.module.modules;
 ~

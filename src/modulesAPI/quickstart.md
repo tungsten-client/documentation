@@ -16,17 +16,17 @@ import org.tungsten.client.feature.module.config.TextboxSetting;
 public class ExampleModule extends GenericModule {
 
     // new CheckboxSetting(default, title, description)
-    CheckboxSetting checkboxSetting = new CheckboxSetting(true,"CheckboxSetting","Example checkbox.");
+    CheckboxSetting checkboxSetting = new CheckboxSetting(true, "CheckboxSetting", "Example checkbox.");
 
     // new SliderSetting(default, min, max, title, description)
-    SliderSetting sliderSetting = new SliderSetting(5,1,10,"SliderSetting","Example slider.");
+    SliderSetting sliderSetting = new SliderSetting(5, 1, 10,"SliderSetting", "Example slider.");
 
     // new TextboxSetting(title, description, defaultValue)
-    TextboxSetting textboxSetting = new TextboxSetting("Example", "TextboxSetting","Example textbox.");
+    TextboxSetting textboxSetting = new TextboxSetting("Example", "TextboxSetting", "Example textbox.");
 
     // new ButtonSetting(title, description, handle)
-    ButtonSetting buttonSetting = new ButtonSetting("ExampleButton","Example Button",()->{
-        if(Tungsten.client.player != null){
+    ButtonSetting buttonSetting = new ButtonSetting("ExampleButton", "Example Button", () -> {
+        if(Tungsten.client.player != null){ 
             Tungsten.client.player.sendMessage(Text.of(
                     "CheckBox: " + checkboxSetting.getValue().toString()
                             + "Slider: " + sliderSetting.getValue().toString()
