@@ -26,7 +26,7 @@ public class ExampleModule extends GenericModule {
 
     // new ButtonSetting(title, description, handle)
     ButtonSetting buttonSetting = new ButtonSetting("ExampleButton", "Example Button", () -> {
-        if(Tungsten.client.player != null){ 
+        if(Tungsten.client.player != null) { 
             Tungsten.client.player.sendMessage(Text.of(
                     "CheckBox: " + checkboxSetting.getValue().toString()
                             + "Slider: " + sliderSetting.getValue().toString()
