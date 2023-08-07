@@ -12,4 +12,5 @@
       - [TextboxSetting](modulesAPI/settings/textbox.md)
       - [ButtonSetting](modulesAPI/settings/button.md)
       - [GenericSetting (defining special setting types)](modulesAPI/settings/generic.md)
+  - [Building]()
   - [Publishing]()
