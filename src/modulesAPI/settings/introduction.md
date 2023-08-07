@@ -43,3 +43,6 @@ public class ExampleModule extends GenericModule {
     ~}
 }
 ```
+
+### Reading from a setting
+To get any setting's value, simply use `someSetting.getValue()`
