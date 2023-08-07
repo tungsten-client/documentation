@@ -15,18 +15,14 @@ import org.tungsten.client.feature.module.config.TextboxSetting;
 
 public class ExampleModule extends GenericModule {
 
-    // new CheckboxSetting(default, title, description)
     CheckboxSetting checkboxSetting = new CheckboxSetting(true, "CheckboxSetting", "Example checkbox.");
 
-    // new SliderSetting(default, min, max, title, description)
     SliderSetting sliderSetting = new SliderSetting(5, 1, 10, "SliderSetting", "Example slider.");
 
-    // new TextboxSetting(title, description, defaultValue)
     TextboxSetting textboxSetting = new TextboxSetting("Example", "TextboxSetting", "Example textbox.");
 
-    // new ButtonSetting(title, description, handle)
     ButtonSetting buttonSetting = new ButtonSetting("ExampleButton", "Example Button", () -> {
-        if(this.client.player != null) { 
+        if(this.client.player != null) {
             this.client.player.sendMessage(Text.of(
                     "CheckBox: " + checkboxSetting.getValue().toString()
                             + "Slider: " + sliderSetting.getValue().toString()
@@ -36,29 +32,31 @@ public class ExampleModule extends GenericModule {
     });
 
     public ExampleModule() {
-        // super(title, description, category);
         super("Example", "Example module description.", "Default");
-
-        // make sure settings are valid
         this.registerSettings();
     }
 
     @Override
     protected void disable() {
-        // always run when the module is disabled
-        System.out.println("Module Disabled.");
+        this.logger.info("Module Disabled.");
     }
 
     @Override
     protected void enable() {
-        // always run whenthe module is enabled
-        System.out.println("Module Enabled.");
+        this.logger.info("Module Enabled.");
     }
 
     @Override
     protected void tickClient() {
-        // always run every tick
-        System.out.println("A tick has passed.");
+
+    }
+
+    // Example event subscription. To subscribe to an event, apply @MessageSubscription to a method with the parameter being the event you want to subscribe to.
+    @MessageSubscription
+    void onPlayerMove(PlayerMoveEvent event) {
+        this.logger.info(
+                "Move type: %s, Requested Delta: %s".formatted(event.getType(),event.getRequestedDelta())
+        );
     }
 }
 ```
