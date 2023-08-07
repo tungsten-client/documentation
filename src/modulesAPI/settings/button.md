@@ -12,8 +12,8 @@ The ButtonSetting class has 3 fields:
 ~
 // new ButtonSetting(title, description, handle)
 ButtonSetting buttonSetting = new ButtonSetting("ExampleButton", "Example Button", () -> {
-    if(Tungsten.client.player != null) { 
-        Tungsten.client.player.sendMessage(Text.of("Hello world"));
+    if(this.client.player != null) { 
+        this.client.player.sendMessage(Text.of("Hello world"));
     }
 });
 ```
