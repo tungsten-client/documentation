@@ -7,7 +7,7 @@ The Modules API allows you to define many types of custom setttings, including t
 - [GenericSetting (defining custom setting types)](generic.md) - The class that all settings extend and use in the ClickGUI
 
 ### Registering settings
-A function on [GenericModule](../introduction.md) is `this.registerSettings`, which is very important to include when working with custom settings.
+A function on [GenericModule](../genericModule.md) is `this.registerSettings`, which is very important to include when working with custom settings.
 This function accepts all defined setting fields of the class, meaning you only have to define them and run the function for them to be registered.
 ```java
 ~package org.tungsten.client.feature.module.modules;
