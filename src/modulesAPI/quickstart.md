@@ -19,7 +19,7 @@ public class ExampleModule extends GenericModule {
     CheckboxSetting checkboxSetting = new CheckboxSetting(true, "CheckboxSetting", "Example checkbox.");
 
     // new SliderSetting(default, min, max, title, description)
-    SliderSetting sliderSetting = new SliderSetting(5, 1, 10,"SliderSetting", "Example slider.");
+    SliderSetting sliderSetting = new SliderSetting(5, 1, 10, "SliderSetting", "Example slider.");
 
     // new TextboxSetting(title, description, defaultValue)
     TextboxSetting textboxSetting = new TextboxSetting("Example", "TextboxSetting", "Example textbox.");
