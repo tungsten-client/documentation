@@ -13,5 +13,6 @@
       - [ButtonSetting](modulesAPI/settings/button.md)
       - [GenericSetting (defining special setting types)](modulesAPI/settings/generic.md)
   - [Events](modulesAPI/events/introduction.md)
+  - [Items](items.md)
   - [Testing Your Module](modulesAPI/testing.md)
   - [Publishing]()
